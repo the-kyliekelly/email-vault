@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Email Vault 50 Done-For-You Email Templates</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@1,400;1,600&family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --pink:#F74FA0;
+  --pink-light:#FF85C4;
+  --pink-pale:#FFF0F7;
+  --pink-border:#FFD0E8;
+  --purple:#C070FF;
+  --blue:#60C8FF;
+  --yellow:#FFE600;
+  --black:#1a1a1a;
+  --off-white:#FFF8FC;
+  --white:#fff;
+  --muted:#888;
+  --border:#FFD0E8;
+}
+html,body{height:100%;margin:0}
+body{font-family:'Inter',sans-serif;background:var(--off-white);color:var(--black);display:flex;flex-direction:column;min-height:100vh}
+
+/* ── HEADER ── */
+.vault-header{background:linear-gradient(135deg,var(--pink) 0%,var(--purple) 55%,var(--blue) 100%);padding:20px 28px 0;flex-shrink:0}
+.header-inner{max-width:1120px;margin:0 auto;display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
+.header-left{padding-bottom:18px}
+.header-eyebrow{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:5px}
+.header-title{font-family:'Syne',sans-serif;font-size:30px;font-weight:800;color:#fff;line-height:1;text-transform:uppercase;letter-spacing:-0.01em;text-shadow:2px 2px 0 rgba(0,0,0,0.12)}
+.header-script{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:rgba(255,255,255,0.82);margin-top:4px}
+.header-sticker{background:var(--yellow);color:var(--black);font-family:'Syne',sans-serif;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em;padding:10px 12px;border-radius:4px;transform:rotate(2.5deg);flex-shrink:0;line-height:1.2;text-align:center;margin-bottom:14px;box-shadow:2px 2px 0 rgba(0,0,0,0.15)}
+.header-sticker span{display:block;font-size:9px;letter-spacing:0.08em;opacity:0.75;margin-top:1px}
+
+/* tape strip */
+.tape-strip{height:6px;background:repeating-linear-gradient(90deg,var(--pink-border) 0px,var(--pink-border) 10px,var(--pink-light) 10px,var(--pink-light) 20px);flex-shrink:0}
+
+/* ── CATEGORY PILLS ── */
+.cats-bar{background:var(--white);border-bottom:2px dashed var(--pink-border);padding:10px 28px;flex-shrink:0;position:sticky;top:0;z-index:100}
+.cats-inner{max-width:1120px;margin:0 auto;display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;align-items:center}
+.cats-inner::-webkit-scrollbar{display:none}
+.cat-pill{flex-shrink:0;padding:6px 14px;border-radius:4px;font-size:10.5px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer;border:2px solid transparent;transition:all 0.15s;font-family:'Syne',sans-serif;display:flex;align-items:center;gap:5px}
+.cat-pill .pill-count{font-size:9px;opacity:0.65;font-family:'DM Mono',monospace}
+.cat-pill.active .pill-count{opacity:1}
+.cp-welcome{background:#FFF0F7;color:#c0207a;border-color:#FFB0D8}
+.cp-welcome.active{background:var(--pink);color:#fff;border-color:var(--pink)}
+.cp-collab{background:#F3EAFF;color:#7030C0;border-color:#D4A8F8}
+.cp-collab.active{background:#9B40E8;color:#fff;border-color:#9B40E8}
+.cp-nurture{background:#E8F4FF;color:#0055C0;border-color:#90C4F8}
+.cp-nurture.active{background:#2070E0;color:#fff;border-color:#2070E0}
+.cp-sales{background:#FFF5E0;color:#C05010;border-color:#FFCC80}
+.cp-sales.active{background:#F08020;color:#fff;border-color:#F08020}
+.cp-time{background:#E8FFF5;color:#006650;border-color:#80DEC0}
+.cp-time.active{background:#10A878;color:#fff;border-color:#10A878}
+.cp-reengage{background:#FFF0F0;color:#C02020;border-color:#FFB0B0}
+.cp-reengage.active{background:#E03030;color:#fff;border-color:#E03030}
+
+/* ── BODY LAYOUT ── */
+.vault-body{max-width:1120px;margin:0 auto;padding:22px 28px 60px;display:grid;grid-template-columns:248px 1fr;gap:18px;align-items:start;width:100%}
+
+/* ── TEMPLATE LIST (sidebar) ── */
+.tpl-list-wrap{background:var(--white);border:2px dashed var(--pink-border);border-radius:10px;overflow:hidden;position:sticky;top:55px}
+.tpl-list-head{padding:10px 14px;background:var(--pink-pale);border-bottom:2px dashed var(--pink-border);display:flex;align-items:center;justify-content:space-between}
+.tpl-list-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink)}
+.tpl-list-count{font-family:'DM Mono',monospace;font-size:9px;color:var(--muted)}
+.tpl-list{max-height:calc(100vh - 180px);overflow-y:auto}
+.tpl-list::-webkit-scrollbar{width:3px}
+.tpl-list::-webkit-scrollbar-thumb{background:var(--pink-border);border-radius:2px}
+.tpl-row{padding:10px 14px;cursor:pointer;border-bottom:1px dashed var(--pink-border);border-left:3px solid transparent;transition:all 0.12s;display:flex;gap:9px;align-items:flex-start}
+.tpl-row:last-child{border-bottom:none}
+.tpl-row:hover{background:var(--pink-pale)}
+.tpl-row.active{background:var(--pink-pale);border-left-color:var(--pink)}
+.tpl-num{font-family:'DM Mono',monospace;font-size:10px;color:var(--pink-border);flex-shrink:0;margin-top:1px;min-width:20px}
+.tpl-row.active .tpl-num{color:var(--pink)}
+.tpl-row-name{font-size:11.5px;font-weight:600;color:var(--black);line-height:1.35;margin-bottom:2px}
+.tpl-row-hint{font-size:10px;color:var(--muted);line-height:1.35}
+
+/* ── CONTENT PANEL ── */
+.content-panel{}
+
+/* cat intro card */
+.cat-intro{background:var(--white);border:2px dashed var(--pink-border);border-radius:10px;padding:18px 22px;margin-bottom:16px;position:relative;overflow:hidden}
+.cat-intro::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--purple),var(--blue))}
+.cat-intro-title{font-family:'Syne',sans-serif;font-size:19px;font-weight:800;color:var(--black);text-transform:uppercase;letter-spacing:0.02em;margin-bottom:3px}
+.cat-intro-script{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--pink);margin-bottom:8px}
+.cat-intro-desc{font-size:12.5px;color:#555;line-height:1.7}
+
+/* template card */
+.tpl-card{background:var(--white);border:2px dashed var(--pink-border);border-radius:10px;overflow:hidden}
+.tpl-card-header{padding:18px 22px 16px;border-bottom:2px dashed var(--pink-border)}
+.tpl-eyebrow{display:inline-block;background:var(--yellow);color:var(--black);font-family:'DM Mono',monospace;font-size:9px;font-weight:500;text-transform:uppercase;letter-spacing:0.1em;padding:2px 8px;border-radius:2px;margin-bottom:8px}
+.tpl-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:var(--black);text-transform:uppercase;letter-spacing:0.01em;line-height:1.1;margin-bottom:10px}
+.when-block{background:var(--pink-pale);border-left:3px solid var(--pink);border-radius:0 6px 6px 0;padding:9px 13px;margin-bottom:14px;position:relative}
+.when-label{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:4px}
+.when-text{font-size:12px;color:#704050;line-height:1.65}
+.subjects-block{background:#FFF8FD;border:1.5px dashed var(--pink-border);border-radius:6px;padding:11px 14px}
+.subjects-label{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.subject-line{font-size:12.5px;color:var(--black);padding-left:14px;position:relative;margin-bottom:4px;line-height:1.5}
+.subject-line:last-child{margin-bottom:0}
+.subject-line::before{content:'★';position:absolute;left:0;color:var(--pink);font-size:9px;top:2px}
+
+/* body */
+.tpl-body{padding:20px 22px}
+.tpl-text{font-size:13px;line-height:1.95;color:#2a2a2a;white-space:pre-wrap;word-break:break-word;font-weight:300}
+.ph{background:rgba(247,79,160,0.10);color:#c0105a;border-radius:3px;padding:1px 4px;font-weight:500;font-size:12px;font-family:'DM Mono',monospace}
+
+/* footer */
+.tpl-footer{padding:13px 22px;border-top:2px dashed var(--pink-border);background:var(--pink-pale);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.copy-btn{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(90deg,var(--pink),var(--purple));color:#fff;border:none;border-radius:50px;padding:9px 22px;font-size:10.5px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;cursor:pointer;transition:opacity 0.15s;font-family:'Syne',sans-serif}
+.copy-btn:hover{opacity:0.88}
+.copy-btn.copied{background:linear-gradient(90deg,#10A878,#2070E0)}
+.ph-note{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:5px}
+.ph-chip{background:rgba(247,79,160,0.1);color:#c0105a;border-radius:3px;padding:1px 6px;font-size:10px;font-family:'DM Mono',monospace;font-weight:500}
+
+/* ── FOOTER ── */
+.vault-footer{background:var(--black);margin-top:auto;flex-shrink:0}
+.footer-inner{max-width:1120px;margin:0 auto;padding:22px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-logo{font-family:'Syne',sans-serif;font-size:14px;font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:0.08em}
+.footer-script{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;color:rgba(255,255,255,0.45);margin-top:2px}
+.footer-links{display:flex;align-items:center;gap:10px}
+.footer-links a{font-size:11.5px;color:var(--pink-light);text-decoration:none;letter-spacing:0.04em;transition:color 0.15s}
+.footer-links a:hover{color:var(--pink)}
+.footer-dot{color:rgba(255,255,255,0.2);font-size:9px}
+.footer-right{text-align:right}
+.footer-note{font-size:10.5px;color:rgba(255,255,255,0.3);line-height:1.6;font-family:'DM Mono',monospace}
+
+@media(max-width:740px){
+  .vault-body{grid-template-columns:1fr;padding:16px 16px 60px}
+  .tpl-list-wrap{position:static}
+  .tpl-list{max-height:none}
+  .cats-bar{padding:10px 16px}
+  .vault-header{padding:16px 16px 0}
+  .header-inner{flex-direction:column;align-items:flex-start}
+  .header-sticker{transform:none;margin-bottom:0;align-self:flex-end}
+}
+</style>
+</head>
+<body>
+
+<header class="vault-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <div class="header-eyebrow">Kylie Kelly presents</div>
+      <div class="header-title">The Email Vault</div>
+      <div class="header-script">50 done-for-you email templates</div>
+    </div>
+    <div class="header-sticker">50 templates<span>inside ✦</span></div>
+  </div>
+</header>
+<div class="tape-strip"></div>
+
+<nav class="cats-bar" aria-label="Template categories">
+  <div class="cats-inner" id="cats-inner"></div>
+</nav>
+
+<div class="vault-body" id="vault-body">
+  <aside class="tpl-list-wrap" aria-label="Template list">
+    <div class="tpl-list-head">
+      <span class="tpl-list-label" id="list-label">Templates</span>
+      <span class="tpl-list-count" id="list-count"></span>
+    </div>
+    <div class="tpl-list" id="tpl-list"></div>
+  </aside>
+  <main class="content-panel" id="content-panel" aria-live="polite"></main>
+</div>
+
+<script>
+const CATS = [
+  {
+    id:'welcome',cls:'cp-welcome',emoji:'✉',label:'Welcome',count:6,
+    title:'Welcome Sequence',script:'First impressions that actually stick',
+    desc:'Everything your new subscribers need from freebie delivery to soft pitch. Use the full 4-email sequence, or grab the single Start Here email when you want simplicity without sacrificing warmth.',
+    templates:[
+      {name:'Start Here Email',hint:'Replaces full sequence',eyebrow:'Welcome · Single Email',
+       when:'Use this when you want one powerful first impression instead of a multi-email sequence. Great for busy seasons or when simplicity is the goal.',
+       subjects:['Start here [FIRST NAME]...'],
+       body:`Hey [FIRST NAME],
+
+If we haven't officially met yet I'm Kylie 👋
+
+Visibility coach & audience growth expert, host of The Email Growth Show, proud Aussie mama to two wild little boys, and your new biz bestie cheering you on from a tiny town with a big heart (and strong coffee always in hand!)
+
+I'm so damn happy you're here.
+
+Since you just joined my email family cue the confetti 🎉 I wanted to give you a little behind-the-scenes peek at what you've signed up for.
+
+Because I know your inbox is sacred.
+
+Here's what to expect from me:
+
+→ Emails 2–3 times a week with juicy email marketing + visibility strategies that actually work
+→ Real talk on what's working (and what's not) in my business and with my clients
+→ Invites to the good stuff: summits, bundles, masterclasses
+→ Links to freebies + paid offers that help you build a business that works for you
+
+[SIGNOFF]
+
+P.S. I'm nosy in the best way how'd you find me? Summit? Bundle? A podcast episode you loved? Hit reply and tell me. I always wanna know how you landed here!`},
+      {name:'Email #1: Delivery & Hello',hint:'Send immediately after opt-in',eyebrow:'Welcome Sequence · Email 1 of 4',
+       when:'Send immediately after someone opts in. Deliver the freebie fast, introduce yourself warmly, and plant a seed for what\'s coming over the next few days.',
+       subjects:["Here's your [FREEBIE NAME]: open for access 👀",'Open to access [YOUR FREEBIE NAME]',"Here's that [guide/template] you asked for!"],
+       body:`Hey [FIRST NAME],
+
+So excited you're here your [FREEBIE NAME] is ready for you:
+
+[CLICK TO ACCESS → insert link here]
+
+I created this to help you [QUICK BENEFIT e.g. "write a welcome sequence that actually connects" or "stop ghosting your list"].
+
+I know how tempting it can be to grab a freebie and do nothing with it… so let's change that!
+
+Oh, by the way I'm [YOUR NAME]. And if you only know one thing about me and this email list, it's that as much as I love [SOMETHING RELATABLE], I love the idea of [YOUR VISION FOR CLIENTS] even more.
+
+Over the next few days, I'll share a few tips to help you [RESULT OR GOAL].
+
+Can't wait to show you what's possible.
+
+[SIGNOFF]
+
+P.S. [ASK A SIMPLE YES/NO QUESTION HERE]? Seriously hit reply and let me know. I'd love to hear from you.`},
+      {name:'Email #2: Story & Tip',hint:'Build connection with vulnerability',eyebrow:'Welcome Sequence · Email 2 of 4',
+       when:'Send 1–2 days after Email #1. This is your trust-builder. A moment of real honesty goes further than any strategy tip.',
+       subjects:['Can I share something real with you?','I used to feel so awkward sending this email…','When someone downloaded my freebie, I used to panic 😅'],
+       body:`Hey [FIRST NAME],
+
+There was a time when someone would grab my freebie and… that was it.
+
+I'd freeze up.
+
+I wanted to say something helpful. I wanted to connect.
+
+But I didn't know what to say next or how to say it without feeling awkward.
+
+If you've ever felt like that you're so not alone.
+
+That's actually why I created [FREEBIE NAME]: to help you [WHAT IT HELPS THEM DO].
+
+But more than that? I want to show up for you in a way that's real and helpful not just more noise in your inbox.
+
+Here's a little reminder I come back to often:
+
+Forget perfection. Just be real your people will feel it.
+
+Whether we've just met or you've been following me for a while I'm here to support you.
+
+Next time, I'll share what you can expect from me going forward!
+
+Until then, breathe. You're doing better than you think.
+
+[SIGNOFF]`},
+      {name:'Email #3: What To Expect',hint:'Set the relationship up right',eyebrow:'Welcome Sequence · Email 3 of 4',
+       when:'Send on day 3 or 4. Make it official tell them exactly what they signed up for, and what they won\'t get from you. The ❌ list builds trust fast.',
+       subjects:["Here's what you can expect from me 💌",'So… what now? Let me tell you!',"You're officially in here's what that means"],
+       body:`Hey [FIRST NAME],
+
+Let's make this official, shall we?
+
+Here's what you can expect now that you're part of my email fam:
+
+→ Real, practical tips to help you [RESULT e.g. "grow your email list without dancing on Instagram"]
+→ Behind-the-scenes of what I'm learning, testing, and teaching in real time
+→ Free resources and occasional low-ticket offers that actually move the needle
+
+Here's what you WON'T get from me:
+
+❌ Fluff
+❌ Fear-based marketing
+❌ Emails for the sake of sending an email
+
+This space is about real support, with strategies that actually feel good (and work).
+
+If that sounds like your vibe, hit reply and type [FUN WORD e.g. "YAY"] so I know you're with me.
+
+[SIGNOFF]
+
+P.S. If you're someone who likes [WHAT YOUR OFFER IS ABOUT], you're going to love what's coming tomorrow 😏`},
+      {name:'Email #4: Invitation & CTA',hint:'Soft-pitch your paid offer',eyebrow:'Welcome Sequence · Email 4 of 4',
+       when:'The final email of your sequence. A warm, natural invitation not a hard sell. Position your paid offer as the logical next step for someone who loved the freebie.',
+       subjects:['This might be your next best step…','Ready for more? Let\'s keep going →',"You've started strong here's what's next"],
+       body:`Hey [FIRST NAME],
+
+By now, you've hopefully had a chance to peek at [FREEBIE NAME] and get a little spark of momentum when it comes to [TOPIC/GOAL].
+
+But if you're anything like me, once you start seeing progress, the next question is:
+
+"Okay, what now?"
+
+That's exactly where [PAID OFFER NAME] comes in.
+
+It's designed to help you [MAIN RESULT e.g. "turn your subscribers into actual clients," "build consistent visibility without burning out"].
+
+And since you've already taken the first step? I want to make your next one feel easy and low-pressure.
+
+[INSERT SPECIAL OFFER, DISCOUNT, OR BONUS]
+
+Whether you're just getting started or ready to expand, I'd love to support you inside.
+
+This might be the exact nudge you've been looking for.
+
+[SIGNOFF]
+
+P.S. Not sure if it's the right time? No stress. Keep showing up your momentum matters more than perfection. And I'm always just an email away!`},
+      {name:'Bundle-Friendly One-Email Welcome',hint:'For high-volume list growth seasons',eyebrow:'Welcome · Bundle / Summit Version',
+       when:'Use during bundles, summits, or any high-volume opt-in season. One strong email that delivers the freebie, introduces you, and gives them a reason to stick around without overwhelming them.',
+       subjects:['Welcome to [YOUR FREEBIE NAME] 🎉','Open to access [YOUR FREEBIE NAME]',"Here's that [guide/template] you asked for!"],
+       body:`Hey [FIRST NAME],
+
+Thank you so much for requesting access to [FREEBIE NAME]: I'm so thrilled to share it with you!
+
+STEP 1: How to access your freebie
+
+Download your [FREEBIE NAME] here: [INSERT LINK]
+
+This [BRIEF DESCRIPTION e.g. guide, checklist, workbook] is designed to help you [SPECIFIC RESULT OR BENEFIT].
+
+STEP 2: Bonus gift for you 🎁
+
+Because I'm so excited to help you [SPECIFIC GOAL], here's another resource:
+
+[BONUS RESOURCE NAME] [Brief description]
+
+Grab it here: [INSERT LINK]
+
+---
+
+Wait who am I?
+
+Hi 👋 I'm [YOUR NAME].
+
+→ [Brief description of what you do]
+→ I've worked with [NUMBER OR IMPRESSIVE RESULT]
+→ My mission is to [YOUR MISSION]
+
+You'll hear from me regularly with tips, strategies, and both free and paid resources to help you [THEIR MAIN GOAL].
+
+Thank you for joining my community I'm so grateful to have you here!
+
+[SIGNOFF]`},
+    ]
+  },
+  {
+    id:'collab',cls:'cp-collab',emoji:'🤝',label:'Collaboration',count:8,
+    title:'Collaboration Emails',script:'Partnerships that feel genuinely good',
+    desc:'Reach out for podcast swaps, freebie exchanges, and joint ventures without ever feeling like you\'re cold-pitching. These templates are warm, mutual, and genuinely fun to send.',
+    templates:[
+      {name:'Podcast Pitch',hint:'Guest pitch to a host you listen to',eyebrow:'Collaboration · Podcast Outreach',
+       when:'Send to podcast hosts you genuinely follow. The more specific your episode reference, the higher your response rate. This is a conversation starter, not a CV submission.',
+       subjects:['Podcast interview idea 🎙','Lurking fan… just binged your latest episode 😍','Wanna chat about [TOPIC] on your podcast?'],
+       body:`Hi [HOST NAME],
+
+Great show! I just finished listening to a few episodes. As a [YOUR INDUSTRY] business owner, I really connected with what you shared about [SPECIFIC EXAMPLE FROM A RECENT EPISODE].
+
+If you're seeking guests, I'd love to contribute by discussing [YOUR TOPIC].
+
+This is valuable to your listeners because [WHY IT MATTERS TO THEIR SPECIFIC AUDIENCE].
+
+I can also share the interview with my [EMAIL LIST / SOCIAL FOLLOWING / NETWORK] I know my community would benefit from what you're building.
+
+No pressure at all to have me as a guest it's 100% about adding value to your audience.
+
+Looking forward to hearing from you,
+
+[SIGNOFF]`},
+      {name:'Podcast Pitch Follow-Up',hint:'Follow up if no reply after 7 days',eyebrow:'Collaboration · Podcast Follow-Up',
+       when:'Send 7 days after your initial pitch if you haven\'t heard back. Keep it short, warm, and without pressure. One gentle nudge is enough.',
+       subjects:['Just circling back no rush 🎙','Following up on my podcast idea…','Did this land in your inbox?'],
+       body:`Hi [HOST NAME],
+
+Just wanted to follow up on my note from last week in case it got buried in your inbox totally understand how full things get!
+
+I'd still love to be considered as a guest on [PODCAST NAME] if the timing ever feels right. Happy to share my media kit or any other info that would help.
+
+Either way, I'm a big fan of what you're creating keep up the incredible work!
+
+[SIGNOFF]`},
+      {name:'Freebie Swap Pitch',hint:'Propose a mutual list share',eyebrow:'Collaboration · Freebie Swap',
+       when:'Best for warm connections people whose work you genuinely admire. Keep it mutual and specific. Mention their actual content to show it\'s not a copy-paste blast.',
+       subjects:['I think your audience would love this?','Wanna share about [TOPIC] with your email list?','Fancy a freebie swap?','Real quick idea…'],
+       body:`Hey [FIRST NAME]!
+
+Hope this email finds you well!
+
+I know we're already connected, but I wanted to reach out because I have an idea that I think could benefit both of our audiences: a freebie swap!
+
+I have a [DESCRIPTION OF YOUR FREEBIE] that I believe your audience would find incredibly valuable. It's designed to [BRIEF BENEFIT], and it aligns perfectly with your recent content on [RELATED TOPIC].
+
+Of course, I'd love to share one of your freebies with my list too. I'm confident that my audience who are mostly [YOUR IDEAL CLIENT DESCRIPTION] would really benefit from your expertise on [TOPIC].
+
+Let me know if you're interested and we can chat details…
+
+Looking forward to hearing from you!
+
+[SIGNOFF]
+[BUSINESS NAME]`},
+      {name:'Warm Partnership: People You Know',hint:'Personal outreach to a real connection',eyebrow:'Collaboration · Warm Outreach',
+       when:'Someone you\'ve actually met or spoken to before. Make it feel like a genuine catch-up by referencing something real and personal about them.',
+       subjects:['Quick check-in and a thought 💡'],
+       body:`Hi [FIRST NAME],
+
+Happy New Year!
+
+How was your holiday season? [ADD PERSONAL DETAIL e.g. "Did you and the family fall in love with Japan? I can't believe Susie is starting prep this year!"]
+
+I've been thinking about how we could support each other's growth this year whether that's through a collab, cross-promotion, or just being in each other's corner in a bigger way.
+
+Are you free for a quick Zoom soon? I'd love to chat and brainstorm.
+
+[SIGNOFF]`},
+      {name:'Warm Partnership Follow-Up',hint:'Follow up 3–4 days later',eyebrow:'Collaboration · Warm Follow-Up',
+       when:'Send 3–4 days after your warm outreach email if no reply. Keep it light a gentle bump, not a chase.',
+       subjects:['Just bumping this up in your inbox!','Following up no pressure at all'],
+       body:`Hey [FIRST NAME],
+
+Just popping back in case my last note got buried totally get it, this time of year is full on.
+
+Would love to explore some fun ways we could support each other in [YEAR] hit reply if you're keen to chat!
+
+No pressure, just a little nudge.
+
+[SIGNOFF]`},
+      {name:'Warm-ish Partnership Pitch',hint:'For people you kinda know',eyebrow:'Collaboration · Warm-ish Outreach',
+       when:'You share a community, mastermind, or course but haven\'t had a real conversation yet. A great low-pressure intro that opens the door without making any big asks.',
+       subjects:['Thought I\'d reach out love connecting with fellow [GROUP NAME] folks'],
+       body:`Hi [FIRST NAME],
+
+Hope your week's going well!
+
+I wanted to reach out and say a quick hello I'm also inside [GROUP NAME / MASTERMIND / COURSE] and figured it was about time I introduced myself properly.
+
+[YEAR] is my year of partnerships and meaningful collabs and I'd love to explore two things:
+
+1. What's your biggest growth focus this year?
+(That way I can see how I might be able to support you via my list, affiliate promos, podcast, social shares, etc.)
+
+2. Would you be open to exploring some simple, win-win ways to work together?
+(Podcast swaps, bundles, joint freebies, promo support… I'm open!)
+
+Let me know if you're keen to connect would love to learn more about what you're up to.
+
+[SIGNOFF]`},
+      {name:'Warm-ish Partnership Follow-Up',hint:'Follow up 7 days later',eyebrow:'Collaboration · Warm-ish Follow-Up',
+       when:'Send 7 days after your warm-ish pitch if no reply. Keep it genuinely no-pressure just leaving the door open.',
+       subjects:['Just circling back no rush'],
+       body:`Hey [FIRST NAME],
+
+Just following up on my last note I'd still love to connect and explore how we might be able to collaborate or support each other this year.
+
+Totally understand if now's not the time just keeping the door open!
+
+[SIGNOFF]`},
+      {name:'Cold Partnership Pitch',hint:'For people you don\'t know yet',eyebrow:'Collaboration · Cold Outreach',
+       when:'Send only after some light social warming (likes, comments, follows). The specific reference to their work is what makes this land never send without it.',
+       subjects:['Possible collab for [YEAR]?'],
+       body:`Hi [FIRST NAME],
+
+Hope you're having a great week!
+
+I've been following your work lately and really love what you're doing in the [INDUSTRY/NICHE] space especially [SPECIFIC THING FROM THEIR CONTENT]. 🙌
+
+This year, I'm being super intentional about building aligned partnerships and thought there might be a great opportunity for us to collaborate in a way that feels good for both of us something like:
+
+→ A podcast swap
+→ A co-hosted free training or bundle
+→ An affiliate collab
+→ Guest expert sessions or promo shares
+
+Would you be open to jumping on a short Zoom to explore ideas? No pressure at all just reaching out in case the timing's right.
+
+[SIGNOFF]`},
+    ]
+  },
+  {
+    id:'nurture',cls:'cp-nurture',emoji:'💛',label:'Nurture',count:17,
+    title:'Nurture Emails',script:'Stay top of mind, stay real',
+    desc:'The emails that build the relationship between launches. Use these to show up consistently, share stories, and give your list a reason to love hearing from you no pitch required.',
+    templates:[
+      {name:'Behind-the-Scenes of Your Lead Magnet',hint:'Share the why behind your freebie',eyebrow:'Nurture · Connection',
+       when:'Use when you want to re-promote a freebie without it feeling like a re-promotion. The origin story format makes it feel like a gift, not a pitch.',
+       subjects:['Why I created [LEAD MAGNET NAME]','The story behind [YOUR LEAD MAGNET]','My free gift to help you [RESULT]'],
+       body:`Hey [FIRST NAME],
+
+I wanted to take you behind the scenes of something I created just for you.
+
+It's called [LEAD MAGNET NAME], and it exists because…
+
+[INSERT QUICK ORIGIN STORY maybe a struggle you had, a client win, or a common question you kept getting]
+
+It's been downloaded by [NUMBER] people already, and I keep hearing how helpful it's been.
+
+If you've grabbed it already amazing! I'd love to hear what you thought.
+
+If not, here's your chance:
+
+[INSERT LINK]
+
+I hope it helps you [TRANSFORMATION].
+
+Let me know what you think once you check it out!
+
+[SIGNOFF]`},
+      {name:'Announce New Lead Magnet',hint:'Share a fresh freebie with your list',eyebrow:'Nurture · List Growth',
+       when:'Send to your existing list whenever you launch a new freebie. They opted in once give them a reason to love you again.',
+       subjects:['Have you got this yet?','Gift for you: [WHAT THE RESOURCE IS]','This might just make your day [FIRST NAME]'],
+       body:`Hey [FIRST NAME],
+
+If you're anything like me, there's been a bunch of times where you wished you could [DESIRED OUTCOME], but [CHALLENGE OR PROBLEM].
+
+Yeah, it's easy. Right.
+
+*insert eye roll*
+
+I've always wanted to [DESIRED OUTCOME], which is why I created this for you!
+
+[FREEBIE NAME] is a [WHAT IT IS AND WHO IT'S FOR] who want to [DESIRED RESULT].
+
+You can get it here: [INSERT LINK]
+
+With [FREEBIE NAME], you get:
+
+→ [BENEFIT #1]
+→ [BENEFIT #2]
+→ [BENEFIT #3]
+
+You can thank me later.
+
+[SIGNOFF]`},
+      {name:'Why I Updated My Freebie',hint:'Relaunch an existing freebie with fresh energy',eyebrow:'Nurture · List Growth',
+       when:'Perfect for re-engaging subscribers who may have already seen your freebie. The "glow-up" angle makes it feel new even if they grabbed the old version.',
+       subjects:['I gave [FREEBIE NAME] a glow-up ✨',"You've seen this before… but not like this!",'Why I updated one of my most popular freebies…'],
+       body:`Hey [FIRST NAME],
+
+You might remember this one but I just gave it a serious glow-up… and I think you're going to love what's new!
+
+A while ago, I created [FREEBIE NAME] because I kept hearing [ORIGINAL CHALLENGE FROM YOUR AUDIENCE].
+
+But since then? I've learned even more about what works, what doesn't, and what my audience (that's you!) actually needs right now.
+
+So I updated it with clearer steps, better tools, and a fresh new vibe!
+
+Here's what's inside the new version:
+
+→ [UPDATE #1 e.g. A simplified walkthrough for setting it up in 30 minutes]
+→ [UPDATE #2 e.g. An updated strategy that actually converts]
+→ [UPDATE #3 e.g. A bonus swipe file they'll love]
+
+Whether you grabbed the old version or this is brand new to you, this is the one you'll actually want to use!
+
+Grab your copy here: [INSERT LINK]
+
+[SIGNOFF]
+
+P.S. If you check it out, I'd love to hear what you think hit reply and let me know!`},
+      {name:'What\'s Next After The Freebie',hint:'Guide them to the natural next step',eyebrow:'Nurture · Soft Transition',
+       when:'Send 1–3 days after someone downloads your lead magnet. Keeps momentum going and introduces your paid offer, podcast, or best next resource without a hard pitch.',
+       subjects:['Your next step (if you\'re ready)','Here\'s what I think you\'ll love next…','Ready to go a little deeper?'],
+       body:`Hey [FIRST NAME],
+
+I hope you've had a chance to check out [FREEBIE NAME]: and that it's already sparked a few aha moments for you! 🙌
+
+Now, if you're anything like the people I made it for, you might be wondering…
+
+Okay, what now? What's next?
+
+So I wanted to pop in and share a few ways you can take this work deeper only if you're ready:
+
+→ [RESOURCE #1: Paid Offer, Workshop, or Next Step]
+If you're ready to [SOLVE THE DEEPER PROBLEM], I created [OFFER NAME] to help you do exactly that.
+Learn more here → [LINK]
+
+→ [RESOURCE #2: Podcast or Blog Content]
+Prefer to keep things low-key for now? Start here:
+[EPISODE / POST TITLE → brief description + link]
+
+→ [RESOURCE #3: Free community / opt-in / email series]
+Want more free support? I'd love to have you join [NAME OF COMMUNITY].
+Join here → [LINK]
+
+No pressure, ever. Just the next step if (and when) it feels like a fit.
+
+[SIGNOFF]
+
+P.S. Haven't had a chance to dive into [FREEBIE NAME] yet? No stress you can still access it right here: [INSERT LINK]`},
+      {name:'Story-Based Connection',hint:'Build trust through a personal story',eyebrow:'Nurture · Relationship',
+       when:'Send when engagement feels flat or you want to go deeper. Personal stories consistently outperform tips and tactics when it comes to replies and connection.',
+       subjects:["I wasn't going to share this but…",'When everything felt too hard','This almost made me quit (but I didn\'t)'],
+       body:`Hey [FIRST NAME],
+
+There's something I've been thinking about lately that I wanted to share with you.
+
+[INSERT YOUR STORY a turning point, a big lesson, or a real moment that shaped your journey.
+
+Example: A few years ago, I remember sitting at my desk in tears, wondering if this business thing was really for me. I was doing all the things, following all the advice… and still not seeing the results I thought I should have by then.]
+
+But something shifted when I [PIVOTAL MOMENT e.g. decided to show up consistently / asked for help / simplified everything].
+
+And that moment taught me [CORE LESSON].
+
+I'm sharing this because maybe you're in one of those moments right now.
+
+And if you are I want you to know you're not alone.
+
+Hit reply. I'd genuinely love to hear where you're at.
+
+We don't always talk about the real stuff in inboxes… but I think we should.
+
+[SIGNOFF]`},
+      {name:'Personal Story with Lesson',hint:'Turn a life moment into a business insight',eyebrow:'Nurture · Storytelling',
+       when:'Use when you have a fresh personal anecdote that connects to a business lesson. The more specific and real the story, the better it lands.',
+       subjects:['Why my [EXPERIENCE] matters to you…','A lesson on [TOPIC]','[NUMBER] things to know about [TOPIC]'],
+       body:`[FIRST NAME]… [YOUR EXPERIENCE e.g. "Something you might not know about me."]
+
+[SHARE 2–3 SENTENCES WITH BACKSTORY be specific, be real, make it relatable]
+
+[CONTINUE THE STORY what happened, what you noticed, what surprised you]
+
+Here [are NUMBER LESSONS] / [is the #1 takeaway] my [EXPERIENCE] can teach us about [TOPIC]:
+
+→ [LESSON #1 describe the lesson and the takeaway in your own words. Be generous give them the real insight, not just the punchline]
+
+→ [LESSON #2]
+
+→ [LESSON #3]
+
+If you loved this email, you'll love [LONGER-FORM CONTENT podcast, blog, YouTube] where I share more stories and lessons like this one!
+
+[SIGNOFF]
+
+P.S. [ASK A QUESTION RELATED TO YOUR STORY e.g. "Do you have a customer experience story to share? Hit reply I'd love to hear it!"]`},
+      {name:'Break the "Rules"',hint:'Challenge common industry advice',eyebrow:'Nurture · POV',
+       when:'Use when you want to stand out and establish a strong point of view. Great for positioning yourself as someone who thinks differently from the crowd.',
+       subjects:['I did the exact opposite of what the experts say and it worked','This "industry rule" nearly killed my results','What if the "right way" is totally wrong for your business?'],
+       body:`Hi [FIRST NAME]!
+
+Let's talk about the advice that everyone in [YOUR INDUSTRY] loves to shout from the rooftops…
+
+"You have to [COMMON INDUSTRY TACTIC]"
+"You must [ANOTHER RULE THEY'VE HEARD]"
+
+And if you don't? You're "doing it wrong." 🙄
+
+I believed it too. I followed it. I trusted it.
+
+Until I realised it was [WHAT WENT WRONG e.g. draining me / confusing my audience / getting me nowhere].
+
+So I tried something different something that felt a little rebellious (and honestly, a lot more aligned).
+
+Instead of [WHAT YOU STOPPED DOING], I [WHAT YOU STARTED DOING].
+
+And that's when things began to shift:
+
+→ [WIN #1 tangible or measurable]
+→ [WIN #2 emotional or audience-related]
+→ [WIN #3 personal or unexpected]
+
+Got your own "industry rule" you're ready to ditch? Hit reply I'd love to hear.
+
+[SIGNOFF]`},
+      {name:'Co-working / Q&A Invite',hint:'Invite them to a live session',eyebrow:'Nurture · Engagement',
+       when:'Send 3–5 days before a live co-working or Q&A session. Works well as a standalone nurture email it feels like an exclusive invite.',
+       subjects:['Join me for a [SESSION TYPE]','Get your questions answered exclusive for my email list!','I\'m hosting a free [SESSION TYPE] and you\'re invited!'],
+       body:`Hey [FIRST NAME],
+
+I'm hosting a [SESSION TYPE e.g. LIVE co-working & Q&A session], and you're officially invited! 🎉
+
+Think of it like a virtual coffee date… but instead of just chatting, we're making moves.
+
+→ Need feedback on something you're working on?
+→ Have questions about [YOUR EXPERTISE]?
+→ Just need motivation and accountability to finally cross that task off your list?
+
+I GOT YOU.
+
+When? [INSERT DATE & TIME]
+Where? [ZOOM LINK OR SIGN-UP LINK]
+How long? About [DURATION] pop in for a few minutes or stay the whole time!
+
+No stiff agendas, no sales pitch just a casual, focused space where we can chat, strategise, and get things DONE.
+
+See you there?
+
+[SIGNOFF]`},
+      {name:'Quick Tip',hint:'Short pattern-disrupter',eyebrow:'Nurture · Quick Win',
+       when:'Use every 3–4 emails to break up longer content. Short emails train your list that every email is worth opening.',
+       subjects:['[DAY OF WEEK] tip day…','How to [DESIRED RESULT]...','My best tip for [PROBLEM IT SOLVES]'],
+       body:`Hey [FIRST NAME],
+
+Today I want to share a quick [TOPIC] tip that you can implement immediately to [DESIRED RESULT].
+
+Here's today's tip:
+
+[YOUR QUICK TIP]
+
+[1–2 sentences on why this matters keep it punchy]
+
+If you'd like more tips and [ANOTHER BENEFIT] like this, that's exactly what you get every week inside [PROGRAM NAME].
+
+Click here to join →
+
+[SIGNOFF]`},
+      {name:'Ask Me Anything',hint:'Invite replies and surface real questions',eyebrow:'Nurture · Engagement',
+       when:'Great for audience research and boosting reply rates. The replies you get will also give you content ideas for the next 3–6 months.',
+       subjects:["What's on your mind [FIRST NAME]? Hit reply & ask!",'Got a question? Ask me anything!','How can I help?'],
+       body:`Hey [FIRST NAME],
+
+I've got a quick question for you…
+
+What's your biggest question about [YOUR TOPIC]?
+
+Hit reply and ask me anything I read every response! No question is too big or too small.
+
+I'd love to know what's on your mind so I can create content that truly helps you.
+
+Looking forward to your reply!
+
+[SIGNOFF]`},
+      {name:'Pull Back the Curtain',hint:'Share the messy truth behind a win',eyebrow:'Nurture · Behind-the-Scenes',
+       when:'Use after a visible win or polished launch. The contrast between the highlight reel and behind-the-scenes creates instant trust.',
+       subjects:['The messy truth behind my [RECENT WIN]','This part of the story never makes the highlight reel','I almost didn\'t share this about [TOPIC]'],
+       body:`Hi [FIRST NAME]!
+
+Let's be real for a second…
+
+You might've seen me [INSERT POLISHED RESULT OR WIN], but what you didn't see?
+
+Was the behind-the-scenes chaos:
+
+→ [MESSY MOMENT #1 personal or business-related]
+→ [MESSY MOMENT #2 tech fail, mindset wobble, etc.]
+→ [MESSY MOMENT #3 something relatable]
+
+Success isn't clean. Growth is messy. And what you see online? It's never the whole picture.
+
+But even through the mess, here's what helped me move forward:
+
+→ [TACTIC OR MINDSET SHIFT #1]
+→ [INSIGHT OR LESSON #2]
+→ [SIMPLE TRUTH OR REFRAME #3]
+
+If you're in one of those "ugh" moments right now you're not behind. You're just in the middle.
+
+Hit reply and tell me one thing that's felt sticky or hard lately. I'd genuinely love to hear.
+
+[SIGNOFF]`},
+      {name:"Here's What I'm Hearing",hint:"Show them you're listening",eyebrow:'Nurture · Community',
+       when:"Use after a round of audience research, a survey, or a burst of DMs and replies. Shows you're paying attention and creates a natural setup to hint at what's coming next.",
+       subjects:["What I've been hearing from you lately…","A little behind-the-scenes insight from me","I've been listening. Here's what's next…"],
+       body:`Hi [FIRST NAME]!
+
+Over the past week or so, I've been asking questions, checking in with my audience, and really paying attention to what's coming up in your world right now.
+
+I wanted to share what I'm noticing because chances are, you might be feeling some of this too.
+
+Here's what I've been hearing:
+
+→ You're tired of doing things the "right" way and still not getting results.
+→ You want clarity not more to-dos.
+→ You're craving more focus, more fun, and fewer "shoulds."
+
+Same. 🙋‍♀️
+
+This has made me think a lot about how I want to show up moving forward.
+
+So here's what I'm doing with what I've learned:
+
+[INSERT 1–2 SMALL CHANGES e.g. "I'm simplifying the way I teach XYZ, and focusing more on helping you take imperfect, aligned action."]
+
+[ANOTHER ACTION e.g. "I've got something coming soon designed to help with exactly this more on that next week 👀"]
+
+I want you to know I'm listening and I'll keep listening.
+
+This space isn't about shouting louder. It's about showing up better.
+
+If any of this hits home, hit reply and let me know what's been on your mind lately too.
+
+[SIGNOFF]`},
+      {name:'How To Make Progress This Year',hint:'Motivate with a simple 3-step plan',eyebrow:'Nurture · Motivation',
+       when:'Send at the start of any new month, quarter, or year. Great for engagement people love actionable content they can implement immediately.',
+       subjects:['The secret to real progress this year…','Ready to simplify your [YEAR] strategy?','3 steps to start seeing results this year'],
+       body:`Hey [FIRST NAME],
+
+Here's the truth: you don't need a million things to grow your [BUSINESS/LIFE/HEALTH/ETC.] in [YEAR].
+
+You just need a plan and the consistency to take action.
+
+This year, I'm focused on simplifying my approach and honing in on what actually works.
+
+I'll be sharing strategies, tools, and insights to help you grow, and I'm excited to have you along for the ride!
+
+To get started, here are three simple tips:
+
+Tip 1: [BRIEF DESCRIPTION]
+
+Tip 2: [BRIEF DESCRIPTION]
+
+Tip 3: [BRIEF DESCRIPTION]
+
+Try these out and let me know how they work for you!
+
+Wishing you clarity, confidence, and incredible results this year.
+
+[SIGNOFF]`},
+      {name:'What\'s Coming Up',hint:'Share what\'s on your horizon',eyebrow:'Nurture · Connection',
+       when:'Use when you want to be real and invite them into your world without a pitch. The invitation for them to share back is what makes it land.',
+       subjects:['Wanna peek into my world [FIRST NAME]?','What I\'m looking forward to right now…'],
+       body:`Hey [FIRST NAME],
+
+Today I wanted to do something a little different let's just say this is me trying to keep our relationship fresh 😜
+
+So here we go!
+
+3 things going well in life right now:
+
+→ [THING #1 e.g. My youngest Sammy has started to sleep through the night!]
+→ [THING #2 e.g. I'm going to an art class this weekend solo. Nervous/excited!]
+→ [THING #3!]
+
+2 things I'm excited about for [BUSINESS NAME] in the next [TIME FRAME]:
+
+→ [THING #1 e.g. I'm just about to open the doors to my membership and I'm SO excited!]
+→ [THING #2]
+
+… and now I want to hear from you [FIRST NAME].
+
+Hit reply and share with me 1 thing in life that you're excited about!
+
+Yes, seriously. I want to know! This can be related to [YOUR NICHE] or something completely random there are no rules here!
+
+I can't wait to hear from you!
+
+[SIGNOFF]`},
+      {name:'"Can I Tell You Something Real"',hint:'No-pitch pure connection email',eyebrow:'Nurture · Pure Connection',
+       when:'Use when you don\'t have anything to sell but want to show up. These are often the emails people save and reply to weeks later.',
+       subjects:['Can I tell you something real?','This isn\'t a strategy… but it matters more'],
+       body:`Hi [FIRST NAME]!
+
+Can I tell you something real?
+
+There are days I sit down to write and feel like I need to have the perfect tip, story, or strategy…
+
+But the truth? Sometimes the most powerful thing I can do is just be honest.
+
+No big CTA. No launch. No master plan.
+
+Just a moment to say if you've been feeling a bit wobbly lately, you're not alone.
+
+If it feels like everyone else is growing faster, doing more, creating better…
+
+Pause for a second.
+
+Because that's just the highlight reel talking. Behind the scenes? Most of us are figuring it out one step at a time.
+
+So here's your reminder:
+
+You don't have to be "on" to be worthy.
+You don't have to perform to be valuable.
+You don't have to do more to be making progress.
+
+The fact that you're still showing up however imperfectly matters. And if no one's told you lately? I'm proud of you.
+
+[SIGNOFF]
+
+P.S. What's something that's been on your heart lately? If you feel like sharing, I'm all ears.`},
+      {name:'Announcing Best Content',hint:'Drive traffic to podcast or blog',eyebrow:'Nurture · Content Promotion',
+       when:'Send within 24–48 hours of publishing new content. The email should feel like a personal recommendation from you not a broadcast announcement.',
+       subjects:['[TITLE OF YOUR EPISODE OR POST]','My best [TYPE OF CONTENT] is live…','Let\'s talk about [TOPIC]'],
+       body:`Hey [FIRST NAME],
+
+I just had to share this with you my best [EPISODE / POST / VIDEO] is live on [NAME OF YOUR SHOW, CHANNEL, OR BLOG]!
+
+[TITLE OF THE EPISODE OR POST]
+
+Click here to [listen / read / check it out] → [LINK]
+
+The number one question I get as a [YOUR NICHE] is:
+
+[QUESTION OR CHALLENGE YOUR AUDIENCE HAS THAT INSPIRED THIS CONTENT]
+
+If this sounds familiar, tune in because today I'm giving you [BRIEF OVERVIEW].
+
+But first I do have to warn you about something.
+
+You should know that [YOUR BOLD STANCE OR OPINION ON THE TOPIC]…
+
+That's why in this [POST / EPISODE], I'm sharing:
+
+→ [TAKEAWAY #1]
+→ [TAKEAWAY #2]
+→ [TAKEAWAY #3]
+
+Click here to [listen to / read] it now →
+
+[SIGNOFF]`},
+      {name:'Favourite Tool, Tip or Resource',hint:'Share something you genuinely love',eyebrow:'Nurture · Resource Share',
+       when:'Use when you have a genuine recommendation a tool, resource, or strategy you\'ve actually used. If you have an affiliate link, always disclose it.',
+       subjects:['My favourite [TOOL / RESOURCE / TIP] for [TOPIC]','This helps me to [GOAL]','I can\'t live without this…'],
+       body:`[FIRST NAME],
+
+My ego would like you to believe that I [RESULT OR OUTCOME] all on my own.
+
+But we've all seen the superhero movies, right?
+
+Behind every superhero is an entourage of helpers. It's rarely one person on their own even if they do have superpowers.
+
+It's the same in business.
+
+So… who's part of my entourage?
+
+[LIST A FEW PEOPLE AND TOOLS]
+
+And last, but totally not least:
+
+[TOOL / RESOURCE / TIP]
+
+It's the one thing that makes it possible for me to [RESULT / OUTCOME] without [THING YOU WANT TO AVOID].
+
+Here's a few things worth bragging about:
+
+#1 [MAIN BENEFIT #1]
+#2 [MAIN BENEFIT #2]
+#3 [MAIN BENEFIT #3]
+
+Click here to check it out → [AFFILIATE OR REGULAR LINK]
+
+[SIGNOFF]
+
+P.S. Full disclosure I am an affiliate for [TOOL], which means I get a small kickback if you try it using this link. I only ever promote things I've tried, tested, and genuinely love.`},
+    ]
+  },
+  {
+    id:'sales',cls:'cp-sales',emoji:'🚀',label:'Pre-launch & Sales',count:9,
+    title:'Pre-launch & Sales Emails',script:'Sell without the ick',
+    desc:'From market research to the final countdown these emails prime your audience, build excitement, and convert without pressure. Use them in sequence for the smoothest possible launch.',
+    templates:[
+      {name:'Market Research Ask',hint:'Surface real pain points before launching',eyebrow:'Pre-launch · Research',
+       when:'Send 2–4 weeks before a launch to gather intel and warm your audience to the problem you solve. The replies literally become your sales copy.',
+       subjects:['[FIRST NAME], quick q for you…','Can I help you with something?','What are you stuck on right now?'],
+       body:`Hi [FIRST NAME]!
+
+Let's keep it real building a business online can feel like a lot sometimes, right?
+
+The to-do list never ends. The advice is everywhere. And most days? You're just trying to figure out what's actually worth focusing on without losing your mind in the process.
+
+That's why I'd love to hear from you directly.
+
+No guessing. No overthinking. Just real talk.
+
+What do you need help with most right now?
+
+Whether it's [INSERT EXAMPLES FROM YOUR NICHE e.g. building your list, creating content, feeling confident selling, etc.]…
+
+Hit reply and tell me. Even just one sentence is perfect.
+
+Your reply helps me create content, resources, and support that actually serves you not just the trendy stuff everyone's talking about.
+
+Can't wait to hear what's on your mind.
+
+[SIGNOFF]
+
+P.S. Not a fan of hitting reply? You can also tell me anonymously here: [INSERT FORM LINK]`},
+      {name:'Warm Up Before Sale',hint:'Plant the seed before pitching',eyebrow:'Pre-launch · Warm Up',
+       when:'Send 3–5 days before your first sales email. Creates curiosity so your offer lands in a warm inbox. By the time you pitch, they\'re already thinking about the problem.',
+       subjects:["You're closer to [RESULT] than you think…",'Struggling with [PROBLEM]? Let\'s talk.','Before I announce this… let\'s get real.'],
+       body:`Hi [FIRST NAME]!
+
+Let's be real for a second:
+
+[INSERT PROBLEM e.g. "Growing an engaged email list can feel like a never-ending uphill battle."]
+
+You try every strategy in the book, but somehow the results just don't match your efforts.
+
+You're not alone I hear this all the time, and I've been there too!
+
+Here's a quick tip for you:
+
+[INSERT TIP OR PIECE OF ADVICE]
+
+Now because I like to over-deliver over the next few days I'll be sharing something that could make this struggle a thing of the past.
+
+So take a moment today to [IMPLEMENT TIP / CHECK OUT FREE RESOURCE]…
+
+And keep your eye on your inbox. I can't wait to share what's coming next!
+
+[SIGNOFF]`},
+      {name:'Simple Case Study or Client Win',hint:'Social proof that tells a story',eyebrow:'Pre-launch · Social Proof',
+       when:'Send 1–2 days before your offer opens. Real stories outperform bullet-point results every time.',
+       subjects:['This one client win made my week!','How [CLIENT TYPE] went from [BEFORE] to [AFTER]','A small shift, a big result…'],
+       body:`Hi [FIRST NAME]!
+
+Let me tell you about a client I worked with recently.
+
+She came to me feeling [WHERE SHE WAS confused, stuck, over it].
+
+She was trying to [WHAT SHE WAS STRUGGLING WITH launching, growing her list, showing up consistently].
+
+But it just wasn't working.
+
+And she was starting to wonder if maybe it wasn't meant for her.
+
+Sound familiar?
+
+Here's what we did together:
+
+[THE STRATEGY, SHIFT, OR SUPPORT YOU PROVIDED keep it clear and grounded]
+
+And here's what happened next:
+
+→ [OUTCOME #1 tangible win]
+→ [OUTCOME #2 internal win or mindset shift]
+→ [OUTCOME #3 unexpected bonus or ripple effect]
+
+The best part? She did it her way.
+
+If you're in that stuck phase right now you're not alone.
+
+And if this made you think "that's what I need," hit reply and tell me what you're working through.
+
+[SIGNOFF]`},
+      {name:'The Framework I Use',hint:'Peek behind the methodology',eyebrow:'Pre-launch · Education',
+       when:'Send 2–3 days before launch as a content-forward pitch. Teaching your framework positions your offer as the obvious way to implement it.',
+       subjects:['This is the process I swear by','The method behind the results','How I help my clients get [SPECIFIC OUTCOME]'],
+       body:`Hi [FIRST NAME]!
+
+If you've ever wondered how I actually help my clients go from [PAIN POINT] to [DESIRED RESULT] I thought I'd share the process I use.
+
+I call it the [FRAMEWORK NAME] and it's what I come back to every single time I want to get results without burning out, guessing, or overcomplicating things.
+
+Here's the breakdown:
+
+[STEP 1 Name it + explain simply]
+What this helps with: [BENEFIT OR RESULT THIS STEP SUPPORTS]
+
+[STEP 2 Name it + explain simply]
+Why this matters: [WHAT PROBLEM IT SOLVES]
+
+[STEP 3 Name it + explain simply]
+The magic in this step: [WHAT SHIFTS AFTER THIS PART]
+
+You don't need a million strategies to grow.
+
+You just need a repeatable system that works for you.
+
+Curious what this could look like in your business? Hit reply and tell me a little about where you're at I'll point you to the step that might help most right now.
+
+[SIGNOFF]`},
+      {name:'Sneak Peek',hint:'VIP first look before launch',eyebrow:'Pre-launch · Hype',
+       when:'Send 1–3 days before launch to your email list. Making them the first to know makes them feel like VIPs which increases conversion.',
+       subjects:["You're getting the first look [FIRST NAME]!",'Sneak peek just for you… 👀','VIP Access: Here\'s what I\'m working on…'],
+       body:`Hey [FIRST NAME],
+
+I couldn't wait to share this with you so here's a little sneak peek at what I've been working on behind the scenes!
+
+[SHORT TEASER ABOUT YOUR OFFER OR PROJECT]
+
+I'm launching [OFFER NAME] soon, and as one of my VIPs, you're getting the first look!
+
+[BEHIND-THE-SCENES DETAIL why you're excited, how it came to life, or a fun fact about the process]
+
+I wanted you to be the first to know because your support means everything.
+
+More details coming soon but for now, here's your exclusive first look:
+
+[LINK / IMAGE / PREVIEW]
+
+Excited to share more with you very soon!
+
+[SIGNOFF]`},
+      {name:'Something Exciting Is Coming',hint:'Build intrigue before you reveal',eyebrow:'Pre-launch · Teaser',
+       when:'Use 5–7 days before launch when you\'re not ready to reveal everything yet. The "I\'m in" reply mechanism builds a warm leads list before you even open doors.',
+       subjects:['Something exciting is coming… 👀','Can I tell you a secret?','I\'ve been working on something behind the scenes'],
+       body:`Hi [FIRST NAME]!
+
+I've been working on something behind the scenes that I cannot wait to share with you.
+
+It's something that's been on my heart for a while and if you've been feeling [RELEVANT STRUGGLE], I think you're going to love what's coming.
+
+I'm not quite ready to spill all the details just yet…
+
+But here's what I can tell you:
+
+→ It's designed to help you [TRANSFORMATION]
+→ It's going to feel [FEELINGS spacious, supportive, exciting, fun]
+→ And it's made just for business owners like you who are ready to [DESIRE OR GOAL]
+
+If your gut is saying "yes" stay tuned. I'll be sending you more info soon.
+
+And if you want to be the first to hear when it drops, hit reply and just say "I'm in" I'll make sure you're at the top of the list.
+
+[SIGNOFF]
+
+P.S. Thank you for being here. You're the reason I create anything in the first place and I don't take that lightly.`},
+      {name:'24-Hour Sale',hint:'Flash sale for engaged subscribers',eyebrow:'Sales · Flash Sale',
+       when:'A spontaneous-feeling sale that rewards your most engaged subscribers. No reminder emails that\'s part of what makes it feel special. Send once and mean it.',
+       subjects:['Today only…','You won\'t want to miss this, [FIRST NAME]','[OFFER NAME]: [DISCOUNT]% off today only!'],
+       body:`[YOUR OFFER NAME] [SALE PRICE]!!
+
+Right now [FIRST NAME], you can grab [SALE DETAILS].
+
+Here's why you want in on this:
+
+→ [BENEFIT #1]
+→ [BENEFIT #2]
+→ [BENEFIT #3]
+
+There's just one tiny catch!
+
+This deal is only good for the next 24 hours so click here to take advantage of it while you can.
+
+[INSERT LINK]
+
+[SIGNOFF]
+
+P.S. I mean it when I say this is 24 hours only and there won't be any reminder emails.
+
+I love rewarding my most engaged subscribers, and if you're reading this that's you! Grab [OFFER NAME] before it expires.`},
+      {name:'Post-Launch: Not Too Late Nudge',hint:'Follow up with non-buyers',eyebrow:'Post-launch · Follow Up',
+       when:'Send 3–5 days after your main sales emails to anyone who didn\'t purchase. The three clear options reduce friction for people who were interested but got busy.',
+       subjects:['Still thinking about [OFFER NAME]? Let\'s talk…','I didn\'t want you to miss this…','Not too late! Here\'s your next step…'],
+       body:`Hi [FIRST NAME]!
+
+I know how it goes you see an offer, you're interested, but then life happens.
+
+Maybe you weren't sure if it was the right time, maybe you had questions, or maybe you just got busy (totally get it).
+
+But I wanted to reach out one last time because I truly believe [OFFER NAME] can help you [ACHIEVE GOAL OR SOLVE PAIN POINT].
+
+If you've been on the fence, let's make this easy:
+
+1. Still interested but have questions? Hit reply and let me know what's holding you back I'd love to help.
+
+2. Ready to join but missed the deadline? Good news I've opened up a few more spots until [EXTENDED DEADLINE, IF APPLICABLE].
+
+3. Want to chat before deciding? Let's set up a quick 10-minute call just reply with "Let's chat" and I'll send over a time.
+
+[SIGNOFF]
+
+P.S. If you're ready to jump in, here's the link: [INSERT LINK] but don't wait too long, this is the last call!`},
+      {name:'Post-Launch: Honest Feedback Request',hint:'Understand why people didn\'t buy',eyebrow:'Post-launch · Research',
+       when:'Send to non-buyers 5–7 days after launch closes. The feedback you get here will significantly improve your next launch. No sales pitch just genuine curiosity.',
+       subjects:['Quick Q: Can you help me out?','Noticed you didn\'t join mind sharing why?','Your opinion = gold to me'],
+       body:`Hi [FIRST NAME]!
+
+I noticed you didn't jump into [OFFER NAME]: and that's totally okay!
+
+I'd love to ask a quick favour could you let me know what held you back from joining?
+
+I'm always looking for ways to improve and make sure I'm creating offers that truly help. If you have a second, just hit reply and let me know:
+
+→ Was something missing?
+→ Was the timing off?
+→ Was there something specific that made you hesitate?
+
+Your insight means the world to me, and your feedback helps me make this even better in the future.
+
+And don't worry there's zero pressure or sales pitch here. Just genuine curiosity and a desire to serve you better.
+
+Thank you in advance for any thoughts you're willing to share!
+
+[SIGNOFF]`},
+    ]
+  },
+  {
+    id:'time',cls:'cp-time',emoji:'📅',label:'Time-Sensitive',count:6,
+    title:'Time-Sensitive Emails',script:'Stay relevant all year round',
+    desc:'Seasonal and quarterly emails that tap into the natural rhythms of the year. Use these to show up as a real person while keeping your list warm no matter what month it is.',
+    templates:[
+      {name:'New Year Goals',hint:'Kickstart connection in January',eyebrow:'Time-Sensitive · New Year',
+       when:'Send in the first week of January. Opens a genuine two-way conversation and gives you a natural segue into what you\'re building this year.',
+       subjects:["What's your #1 goal for the new year? Let's make it happen.",'Ready to own [YEAR] like the boss you are?'],
+       body:`Hey [FIRST NAME],
+
+Happy New Year! 🎉
+
+Can you feel it? That fresh-start energy?
+
+There's nothing quite like the beginning of a new year to inspire big dreams and bold moves.
+
+For me, the start of the year is like a blank canvas a chance to refocus, dream big, and get clear on the steps toward the things that matter most.
+
+So, I want to know:
+
+What's your biggest goal for [YEAR]?
+
+Hit reply and tell me I'd love to cheer you on, share a tip or two, and be in your corner as you make it happen.
+
+This is YOUR year to grow, thrive, and achieve those big, bold goals with confidence and ease.
+
+And I'm here for every step of it. Let's make [YEAR] unforgettable.
+
+[SIGNOFF]`},
+      {name:'Tease Upcoming Lead Magnet: New Year',hint:'Generate excitement for your new freebie',eyebrow:'Time-Sensitive · New Year',
+       when:'Send in early January before revealing your new freebie. Creates anticipation and reminds your list that you\'re always creating new value for them.',
+       subjects:['Something exciting is coming…','Ready to kickstart [YEAR] with a bang?','I\'ve been working on something special for you!'],
+       body:`Hey [FIRST NAME],
+
+I've been working on something special behind the scenes, and I can't wait to share it with you soon!
+
+It's a [BRIEF DESCRIPTION e.g. guide, checklist, template] designed to help you kickstart your [YEAR] goals and [SPECIFIC RESULT].
+
+Here's a little sneak peek of what's coming:
+
+✨ Quick and actionable no fluff.
+✨ Designed specifically for [YOUR NICHE OR THEIR PAIN POINT].
+✨ Helps you [SPECIFIC RESULT].
+
+Keep an eye on your inbox I'll be sharing all the details in the coming days!
+
+Wishing you an amazing start to the year,
+
+[SIGNOFF]`},
+      {name:'Quarterly Wrap-Up',hint:'Share your biggest moment from the quarter',eyebrow:'Time-Sensitive · Quarterly',
+       when:'Send in the final days of each quarter. Mix business wins and personal moments it\'s the combo that makes subscribers feel like they genuinely know you.',
+       subjects:['My biggest win from Q[1/2/3/4]…','What Q[1/2/3/4] has taught me!','I\'m not the same after this last quarter…'],
+       body:`Hey [FIRST NAME],
+
+I was adamant I was not going to start this with the same old thing everyone is saying…
+
+"OMG. I can't believe it's the end of Q[1/2/3/4] already?!"
+
+BUT… I seriously can't believe it either. 😅
+
+Did the last three months go by as fast for you as they did for me? Hit reply and let me know.
+
+Over here, a lot has happened in Q[1/2/3/4]:
+
+→ [BIG MOMENT #1 business or personal]
+→ [BIG MOMENT #2]
+→ [BIG MOMENT #3]
+
+But there is one thing that stands out the most for me this quarter. And that is:
+
+[YOUR BIGGEST WIN, CHALLENGE, OR PROUDEST MOMENT]
+
+Do you have a big win or milestone you're proud of from this quarter?
+
+I would love to hear about it. Seriously hit reply and tell me everything so I can celebrate with you!
+
+[SIGNOFF]`},
+      {name:'Monthly Wrap-Up',hint:'End-of-month connection + forward tease',eyebrow:'Time-Sensitive · Monthly',
+       when:'Send in the last 2–3 days of each month. One of the highest-engagement email formats people love a behind-the-scenes look at your real life.',
+       subjects:['My biggest win from [MONTH]','Before we dive into a new month…',"What the last month has taught me."],
+       body:`Hey [FIRST NAME],
+
+I was really trying not to start this email with the usual cliché…
+
+But seriously can you believe [MONTH] is already over?! 🤯
+
+Did this month fly by for you too? Hit reply and let me know.
+
+Over here, a lot has happened in [MONTH]:
+
+→ [KEY MOMENT #1 mix business and personal]
+→ [KEY MOMENT #2]
+→ [KEY MOMENT #3]
+
+But one thing that really stood out to me this month is:
+
+[YOUR BIGGEST WIN, CHALLENGE, OR LESSON be real here]
+
+Now, I want to hear from YOU:
+
+What was your biggest win, milestone, or lesson from [MONTH]?
+
+Reply and tell me I'd love to celebrate with you!
+
+[SIGNOFF]
+
+P.S. Ready for an exciting [NEXT MONTH]? Here's a sneak peek of what's coming… [INSERT TEASER]`},
+      {name:'Luck or Skill',hint:'Reframe "lucky" success with strategy',eyebrow:'Time-Sensitive · Pre-launch',
+       when:'Send in the lead-up to a launch to reframe success and position your offer as the strategy behind results. Works well with any audience who compares themselves to others.',
+       subjects:['You lucky duck 🐤','Maybe it\'s just luck?','What\'s really behind their success?'],
+       body:`Hi [FIRST NAME]!
+
+I was listening to an episode of How I Built This recently you know the one with Guy Raz?
+
+He always wraps up each interview with this killer question:
+
+"How much of your success was luck, and how much was skill?"
+
+And honestly? Most people say a mix of both.
+
+Sure, there might be moments of luck like your work gets picked up by someone with a big audience, or a client gives you a surprise shoutout.
+
+But more often than not? The success you see from the outside is being driven by a whole lot of skill, strategy, and stamina behind the scenes.
+
+The hard part? We don't see that. We just see the glossy finish. The highlight reel.
+
+And it's easy to assume… "They're just lucky."
+
+But what we're missing are the hours no one saw the emails that flopped. The pivots. The times they thought about quitting.
+
+So if you're feeling behind, or like everyone else is getting lucky but you're still hustling to figure it out you're not alone.
+
+And you don't have to do it on your own either. That's exactly where [INSERT YOUR OFFER NAME] comes in.
+
+→ [BENEFIT #1]
+→ [BENEFIT #2]
+→ [BENEFIT #3]
+
+[CTA → "Make Your Own Luck" or "Get the Support You've Been Missing"]
+
+[SIGNOFF]
+
+P.S. The next level of your business isn't about waiting for a lucky break it's about getting the right support and systems in place. [LINK TO OFFER]`},
+      {name:'This Has Been on My Heart',hint:'Soft, heartfelt check-in between launches',eyebrow:'Time-Sensitive · Connection',
+       when:'Use between launches when you want to reconnect without pitching. Works especially well when you\'re about to announce something new builds anticipation without hard teasing.',
+       subjects:['This has been on my heart lately…','Behind the scenes of a big decision','Can I get honest with you for a sec?'],
+       body:`Hi [FIRST NAME]!
+
+I've been sitting with this for a little while unsure whether to say it out loud, or if it even needed to be said at all.
+
+But if there's one thing I've promised myself (and you), it's that I'll always keep it real.
+
+So here it is…
+
+[INSERT PERSONAL REFLECTION OR REALIZATION e.g. "Lately, I've been feeling the weight of trying to do it all. Trying to be visible, show up, sell, nurture, grow… all at once. And honestly? It's been heavy."]
+
+And through all of that, I've been reminded of something important:
+
+[INSERT YOUR INSIGHT e.g. "Connection matters more than perfection. Simplicity is powerful. And business gets to feel like yours again."]
+
+That's why I've been creating something behind the scenes that I hope will feel like a breath of fresh air for you, too.
+
+[SOFT HINT AT WHAT'S COMING e.g. "It's a new way to [insert benefit], and I'll be sharing more soon."]
+
+I'll be sharing more with you soon but for now, I just wanted to bring you in on the journey.
+
+Because you're not just on my list. You're in this with me.
+
+If any of this resonates… reply and let me know what's been on your heart lately, too.
+
+[SIGNOFF]
+
+P.S. You're doing so much better than you think. Really.`},
+    ]
+  },
+  {
+    id:'reengage',cls:'cp-reengage',emoji:'🔁',label:'Re-engagement',count:4,
+    title:'Re-engagement Emails',script:'Win back the quiet ones',
+    desc:'For the subscribers who\'ve gone cold. Send these in sequence start with value, move to a direct check-in, then a final goodbye if there\'s still no response. Clean lists perform better.',
+    templates:[
+      {name:'Re-engagement #1: Resources',hint:'Win back cold subs with value',eyebrow:'Re-engagement · Sequence Email 1 of 4',
+       when:'Send to anyone who hasn\'t opened in 60–90 days. Lead with value, not guilt. Three curated resources show you still care without asking for anything.',
+       subjects:['Long time no see, [FIRST NAME]!','Is this still on? 🎤','Three free resources just for you!'],
+       body:`Hi [FIRST NAME]!
+
+Wow you opened this email! It kind of feels like running into an old friend at the grocery store after forgetting to text back. (Awkward, right?)
+
+At some point, you signed up for my emails because [THE RESULT YOU HELP THEM GET]. But if life gets busy and my emails take a backseat I get it.
+
+That said, I don't want you to miss out on the good stuff.
+
+So I handpicked three of my most practical, popular resources to help you [DESIRED OUTCOME]:
+
+📌 [RESOURCE #1]
+📌 [RESOURCE #2]
+📌 [RESOURCE #3]
+
+I'm also making it a priority to send useful, no-fluff content going forward things that will actually help you with [THEIR CHALLENGE OR GOAL].
+
+If you're still in, I'd love to hear how things are going for you! Just hit reply and let me know what's up.
+
+And if you'd rather step away, no hard feelings you can unsubscribe anytime (but I'd miss you!)
+
+[SIGNOFF]
+
+P.S. Seriously tell me what's been going on with [TOPIC YOU HELP WITH]. I'd love to know!`},
+      {name:'Re-engagement #2: Direct Check-In',hint:'Ask directly if they still want in',eyebrow:'Re-engagement · Sequence Email 2 of 4',
+       when:'Send 7–10 days after #1 if there\'s still no engagement. More direct but still warm. The three-option format makes it easy to respond without friction.',
+       subjects:['Do you still want my emails [FIRST NAME]?','Should I keep sending these?','Quick check-in [FIRST NAME]'],
+       body:`Hi [FIRST NAME]!
+
+Not to be that person… but I noticed you haven't been opening my emails about [YOUR TOPIC]. 👀
+
+Now, maybe your inbox is a black hole (mine gets like that sometimes), maybe life got busy, or maybe Gmail decided to be rude and hide my emails from you (ugh, so rude).
+
+But either way I wanted to check in.
+
+I don't want you to miss out on the tips and strategies I'm sharing to help you [DESIRED RESULT].
+
+So let's make sure you're still in:
+
+→ Still want in? Click here to confirm this is the best email for you.
+→ Prefer a different email address? Click here to update it.
+→ Wanna peace out? No hard feelings unsubscribe at the bottom of this email.
+
+Either way, I appreciate you being here. And if you're sticking around get ready, because I've got some seriously good stuff coming your way!
+
+[SIGNOFF]
+
+P.S. In case you missed these gems, here are three of my best resources:
+📌 [RESOURCE #1]
+📌 [RESOURCE #2]
+📌 [RESOURCE #3]`},
+      {name:'Re-engagement #3: Final Farewell',hint:'Last email before removing them',eyebrow:'Re-engagement · Sequence Email 3 of 4',
+       when:'The final email before you remove inactive subscribers. Be honest about what will happen it\'s respectful and often triggers the highest re-engagement of the sequence.',
+       subjects:['I hate to see you go, [FIRST NAME]!','Is this goodbye? 😞','Our last email (unless...)'],
+       body:`Well [FIRST NAME]… it looks like this might be where we part ways. 😞
+
+I've been dropping into your inbox with things like:
+
+📌 [TOPIC / EXAMPLE #1 of how you help]
+📌 [TOPIC / EXAMPLE #2 of how you help]
+📌 [TOPIC / EXAMPLE #3 of how you help]
+
+But it seems like you haven't been opening them and I totally get it, life gets busy!
+
+Maybe your [THING YOU HELP WITH] is already thriving and you don't need my emails anymore (which, honestly, would be amazing!)
+
+If that's the case, you don't have to do a thing I'll automatically remove you from my list in a few days.
+
+BUT… if you're thinking, "Wait! I don't want to miss out!" just hit reply and say "keep sending" or click here to stay subscribed.
+
+Either way, I just want to say THANK YOU.
+
+Whether this is goodbye or a quick check-in before we dive back in together I've loved having you here and I never take landing in your inbox for granted.
+
+[SIGNOFF]
+
+P.S. If I don't hear from you in five days, this will be my last email to you. But if you want to keep getting content that helps you [DESIRED OUTCOME] just reply "keep sending" before then!`},
+      {name:'"Do You Still Want To Hear From Me"',hint:'Vulnerable re-engagement from the heart',eyebrow:'Re-engagement · Sequence Email 4 of 4',
+       when:'More personal than the standard sequence. Use this if you\'ve been inconsistent in your sending and want to restart the relationship honestly.',
+       subjects:['Why I almost stopped emailing altogether…','Still here? I\'ve got something for you','Do you still wanna hear from me?'],
+       body:`Hi [FIRST NAME]!
+
+Something you might not know about me:
+
+I've thought about quitting email so many times.
+
+Not because I don't believe in it. But because some weeks, it feels like I'm just yelling into the void.
+
+I'd spend hours writing an email I was proud of… and then crickets.
+
+No replies. Low open rate. That awkward "maybe I should've said something different" feeling.
+
+And yet here I am. Still showing up. Still sending.
+
+Because I've learned something in the quiet seasons…
+
+→ Just because people aren't replying doesn't mean they're not reading.
+→ Just because it's been a minute doesn't mean you've messed it all up.
+→ Just because your list is quiet doesn't mean they're not still your people.
+
+So this is me, sending you a quiet hello a reminder that I'm still here.
+
+And that I've got a whole lot of good stuff coming your way. If you're still up for it.
+
+If you're in hit reply and say "I'm still here" and I'll send you something special. Just a little thank you for sticking around.
+
+And if you've outgrown what I share or moved on to something new that's okay too. No hard feelings, ever.
+
+[SIGNOFF]
+
+P.S. If your inbox has been feeling a little dusty lately… what's one topic or question you wish someone would email you about? Hit reply I'd genuinely love to hear.`},
+    ]
+  }
+];
+
+let curCat=0, curTpl=0;
+
+function hl(t){return t.replace(/\[([^\]]+)\]/g,'<span class="ph">[$1]</span>')}
+
+function buildNav(){
+  document.getElementById('cats-inner').innerHTML=CATS.map((c,i)=>
+    `<button class="cat-pill ${c.cls}${i===0?' active':''}" onclick="switchCat(${i})" aria-label="${c.label}">
+      ${c.emoji} ${c.label}<span class="pill-count">${c.count}</span>
+    </button>`
+  ).join('');
+}
+
+function buildList(){
+  const c=CATS[curCat];
+  document.getElementById('list-label').textContent=c.label;
+  document.getElementById('list-count').textContent=c.count+' templates';
+  document.getElementById('tpl-list').innerHTML=c.templates.map((t,i)=>
+    `<div class="tpl-row${i===curTpl?' active':''}" onclick="selectTpl(${i})" role="button" tabindex="0" aria-label="${t.name}">
+      <div class="tpl-num">${String(i+1).padStart(2,'0')}</div>
+      <div>
+        <div class="tpl-row-name">${t.name}</div>
+        <div class="tpl-row-hint">${t.hint}</div>
+      </div>
+    </div>`
+  ).join('');
+}
+
+function buildContent(){
+  const c=CATS[curCat], t=c.templates[curTpl];
+  document.getElementById('content-panel').innerHTML=`
+    <div class="cat-intro">
+      <div class="cat-intro-title">${c.title}</div>
+      <div class="cat-intro-script">${c.script}</div>
+      <div class="cat-intro-desc">${c.desc}</div>
+    </div>
+    <div class="tpl-card">
+      <div class="tpl-card-header">
+        <div><span class="tpl-eyebrow">${t.eyebrow}</span></div>
+        <div class="tpl-title">${t.name}</div>
+        <div class="when-block">
+          <div class="when-label">✦ When to use this</div>
+          <div class="when-text">${t.when}</div>
+        </div>
+        <div class="subjects-block">
+          <div class="subjects-label">Subject line options</div>
+          ${t.subjects.map(s=>`<div class="subject-line">${hl(s)}</div>`).join('')}
+        </div>
+      </div>
+      <div class="tpl-body">
+        <div class="tpl-text">${hl(t.body)}</div>
+      </div>
+      <div class="tpl-footer">
+        <button class="copy-btn" id="copy-btn" onclick="copyTpl()" aria-label="Copy template">
+          ✦ Copy template
+        </button>
+        <div class="ph-note"><span class="ph-chip">[PLACEHOLDER]</span> = fill in before sending</div>
+      </div>
+    </div>`;
+}
+
+function switchCat(i){
+  curCat=i; curTpl=0;
+  document.querySelectorAll('.cat-pill').forEach((b,j)=>b.classList.toggle('active',j===i));
+  buildList(); buildContent();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function selectTpl(i){
+  curTpl=i;
+  document.querySelectorAll('.tpl-row').forEach((r,j)=>r.classList.toggle('active',j===i));
+  buildContent();
+  document.getElementById('content-panel').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function copyTpl(){
+  const t=CATS[curCat].templates[curTpl];
+  const text=`SUBJECT LINE OPTIONS:\n${t.subjects.join('\n')}\n\n---\n\n${t.body}`;
+  navigator.clipboard.writeText(text).catch(()=>{
+    const el=document.createElement('textarea');
+    el.value=text;document.body.appendChild(el);el.select();
+    document.execCommand('copy');document.body.removeChild(el);
+  });
+  const btn=document.getElementById('copy-btn');
+  const orig=btn.innerHTML;
+  btn.classList.add('copied');
+  btn.innerHTML='✓ Copied!';
+  setTimeout(()=>{btn.classList.remove('copied');btn.innerHTML=orig;},2200);
+}
+
+buildNav(); buildList(); buildContent();
+</script>
+
+<footer class="vault-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <div class="footer-logo">Kylie Kelly</div>
+      <div class="footer-script">email marketing educator & visibility coach</div>
+    </div>
+    <div class="footer-links">
+      <a href="https://kyliekelly.com/" target="_blank" rel="noopener">kyliekelly.com</a>
+      <span class="footer-dot">✦</span>
+      <a href="https://kyliekelly.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+    </div>
+    <div class="footer-right">
+      <div class="footer-note">© Kylie Kelly. All rights reserved.</div>
+      <div class="footer-note">For personal use only. Not for redistribution.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
